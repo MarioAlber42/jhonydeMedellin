@@ -71,7 +71,7 @@ img {
 
    .texto, .titulo, .sub-titulo, .mini-titulo, .logo {
        color: #fff;
-       padding: 3px;
+       margin-bottom: 10px;
    }
 
    .texto {
@@ -79,24 +79,31 @@ img {
        font-family: Georgia, 'Times New Roman', Times, serif;
        margin-bottom: 10px;
        font-size: 1em;
+       padding: 4px;
    }
 
    .titulo, .sub-titulo, .mini-titulo {
+    margin-bottom: 10px;
   text-align: center;
-  margin-bottom: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
 .column--50-25:hover {
     transition: all.5s;
     transform: translateY(-15px);
+    background:linear-gradient(to top, rgb(68, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
 }
 
 .column--33:hover {
     transition: all.5s;
     transform: translateY(-15px);
+    background:linear-gradient(to top, rgb(68, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
 }
 
+.animado {
+   opacity: 0;
+   transition: all 0.5s;
+}
 
 /*-------------------------------------estilos header---------------------------------*/
 header {
@@ -126,22 +133,19 @@ header .titulo {
     margin-bottom: 15px;
 }
 
-header .logo__section .contenedor {
+header .logo__section {
     background:linear-gradient(rgb(121, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
-    color: #fff;
     display: block;
     margin: auto;
     text-align: center;
 }
 
-.logo {
+header .logo {
     width: 200px;
     height: 100px;
     object-fit: cover;
     margin: auto;
 }
-
-
 
 header b {
     font-size: 2.7rem;
@@ -341,7 +345,7 @@ header .social__link:hover {
 .conocenos-comentarios {
     margin: auto;
     width: 99%;
-    background: rgba(51, 13, 13, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
@@ -361,7 +365,7 @@ header .social__link:hover {
    margin: auto;
 }
 
-.opcion {
+/* .opcion {
     background: rgba(90, 88, 88, 0.445);
     width: 100%;
     margin: auto;
@@ -424,28 +428,22 @@ header .social__link:hover {
 .opcion-form button:hover {
    background: #fff;
    color:rgba(255, 0, 0, 0.8);
-}
+} */
 
 /*-------------------------------------estilos footer---------------------------------*/
 footer {
-    background: rgba(185, 21, 21, 0.8);
+    background: linear-gradient(to top, rgb(121, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
     color: #fff;
     text-align: center;
+    margin-top: 15px;
 }
 
 footer .column--50 {
-    padding: 0px;
     margin-bottom: 10px;
-    justify-content: flex-start;
 }
 
 footer i {
     margin-bottom: 6px;
-    transition: all .6s;
-}
-
-footer i:hover {
-     color: rgba(185, 21, 21, 0.8);
 }
 
 footer .social--footer {
@@ -455,6 +453,11 @@ footer .social--footer {
     text-decoration: none;
     display: block;
     margin-bottom: 8px;
+    transition: all 0.5s;
+}
+
+footer .social--footer:hover {
+    color: rgba(185, 21, 21, 0.8);
 }
 
 .copy {
@@ -588,6 +591,10 @@ footer .social--footer {
 .conocenos-comentarios .column--50-25 img {
     width: 250px;
     height: 250px;
+}
+
+.slider__section {
+    height: 500px;
 }
 
 .opcion-form button {
