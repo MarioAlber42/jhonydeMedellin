@@ -138,6 +138,7 @@ header .logo__section {
     display: block;
     margin: auto;
     text-align: center;
+      margin-top: 2px;
 }
 
 header .logo {
