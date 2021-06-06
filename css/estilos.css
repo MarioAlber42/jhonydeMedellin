@@ -111,14 +111,15 @@ header {
    top: 0;
    left: 0;
    z-index: 100;
+   background:linear-gradient(rgb(121, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
 }
 
-header video {
+.header video {
     padding: 7px;
     width: 95%;
 }
 
-header .titulo {
+.header .titulo {
     font-size: 2rem;
     letter-spacing: 5px;
     background: #ccc;
@@ -134,7 +135,6 @@ header .titulo {
 }
 
 header .logo__section {
-    background:linear-gradient(rgb(121, 28, 28) 30%, rgba(0, 0, 0, 0.925) 70%);
     display: block;
     margin: auto;
     text-align: center;
@@ -147,7 +147,7 @@ header .logo {
     margin: auto;
 }
 
-header b {
+.header b {
     font-size: 2.7rem;
     letter-spacing: 5px;
     background: #ccc;
@@ -158,17 +158,17 @@ header b {
     -webkit-background-clip: text;  /* como se extenderá el fondo. En este caso será de las letras */
 }
 
-header em {
+.header em {
     color: rgb(245, 6, 6);
 }
 
-header .texto {
+.header .texto {
     text-align: center;
     font-size: 1rem;
     padding: 3px;
 }
 
-header .gancho {
+.header .gancho {
     background: rgba(41, 40, 40, 0.445);
     width: 85%;
     margin: auto;
@@ -176,11 +176,11 @@ header .gancho {
     text-align: center;
 }
 
-header .gancho .gancho__form {
+.header .gancho .gancho__form {
     width: 100%;
 }
 
-header .gancho .gancho__form .gancho__form-input {
+.header .gancho .gancho__form .gancho__form-input {
     padding: 10px; 
     border-radius: 10px;
     width: 90%;
@@ -189,13 +189,13 @@ header .gancho .gancho__form .gancho__form-input {
     outline: none; /*Para quitar el resplandor al seleccionar un input*/
 }
 
-header .gancho .gancho__form .gancho__form-input::placeholder {
+.header .gancho .gancho__form .gancho__form-input::placeholder {
     text-align: center;
     border: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header .gancho .gancho__form .gancho__form-button {
+.header .gancho .gancho__form .gancho__form-button {
   width: 92%;
   padding: 10px;
   background: rgba(185, 21, 21, 0.8);
@@ -206,26 +206,26 @@ header .gancho .gancho__form .gancho__form-button {
   transition: all 0.5s;
 }
 
-header .gancho .gancho__form .gancho__form-button:hover {
+.header .gancho .gancho__form .gancho__form-button:hover {
  color: rgba(185, 21, 21, 0.8);
  background: rgba(161, 159, 159, 0.301);
  width: 95%;
   }
 
-header .social {
+.header .social {
     margin: auto;
     text-align: center;
     margin-bottom: 15px;
 }
 
-header .social__link {
+.header .social__link {
     font-size: 28px;
     margin-right: 15px;
     color: #fff;
     transition: all 0.3s;
 }
 
-header .social__link:hover {
+.header .social__link:hover {
      color: rgba(158, 154, 154, 0.445);
 }
 
@@ -338,6 +338,14 @@ header .social__link:hover {
     margin-bottom: 20px;
 }
 
+.conocenos-video .column--50:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.conocenos-video .column--50:nth-child(1) .texto {
+    margin-bottom: 15px;
+}
+
 .conocenos-video video source {
     width: 95%;
 }
@@ -352,7 +360,9 @@ header .social__link:hover {
     border-radius: 5px;
     border: 1px solid rgba(161, 159, 159, 0.301);
     transition: all .5s;
-} 
+    margin: auto;
+    margin-bottom: 20px;
+}     
 
 .conocenos-video .conocenos-video-button:hover {
     width: 200px;
@@ -413,17 +423,14 @@ header .social__link:hover {
 }
 
 .formulario--social .formulario--contacto:hover {
-    background: rgba(161, 159, 159, 0.301);
+    color: rgba(161, 159, 159, 0.301);
 }
 
 .formulario--phone {
     color: #fff;
     margin-bottom: 10px;
     margin-top: 10px; 
-}
-
-.formulario--phone i {
-    line-height: 25px;   
+    line-height: 35px;
 }
 
 .formulario .column--50:nth-child(1) {
@@ -451,6 +458,7 @@ width: 95%;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(185, 21, 21, 0.8);
+  color: #fff;
 }
 
 .formulario--form-input::placeholder {
@@ -464,7 +472,6 @@ width: 95%;
     transition: all .2s;
 }
 
-
 .formulario--form-textarea {
     margin-bottom: 20px;
     width: 95%;
@@ -473,6 +480,7 @@ width: 95%;
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(185, 21, 21, 0.8);
+    color: #fff;
 }
 
 .formulario--form-textarea::placeholder {
@@ -618,7 +626,7 @@ footer .social--footer:hover {
            width: 24.9%;
        }
 
-       header .column--50 {
+       .header .column--50 {
            width: 49%;
        }
 
@@ -664,14 +672,6 @@ footer .social--footer:hover {
 }
  
 }
-
-   @media screen and (min-width:1600px) {
-       
-}
-
-
-
-
 
 
 

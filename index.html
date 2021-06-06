@@ -33,44 +33,54 @@
     <a href="https://api.whatsapp.com/send?phone=525548190322&text=Hola%20Jhony!." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i></a>
     <header>
+        <div class="contenedor">
         <div class="logo__section">
-            <div class="contenedor">
             <img src="img/header.jpg" alt="" class="logo">
         </div>
-        </div>
-     <div class="contenedor">
-        <h1 class="titulo"><b>JH</b>ony de Medellin</h1>
-        <p class="texto">Estoy visitando a todos los habitantes de Medellín, hablando con ellos, escuchando sus inquietudes, presentando a mi equipo, y también les comparto mis propuestas de campaña. 
-           <br>
-           Sígueme y acompáñame a los recorridos, #todosconjhony #JuntosAdelante o dime dónde quieres que te visite. <br> Sigueme en mis <em>redes sociales</em> para estar en contacto contigo.</p>
-       <div class="social">
-       <a href="https://m.facebook.com/JHonydemedellin2021/" class="social__link" target="_blank"><i class="fab fa-facebook"></i></a>
-       <a href="https://mobile.twitter.com/HonydeJ" class="social__link" target="_blank"><i class="fab fa-twitter-square"></i></a>
-       <a href="https://instagram.com/jhony_demedellin?utm_medium=copy_link" class="social__link" target="_blank"><i class="fab fa-instagram"></i></a>
-       </div>
-         <div class="container container--flex">
-        <div class="column column--50">
-        <div class="gancho">
-            <h2 class="sub-titulo">¿Deseas conocer las últimas propuestas para mejorar tu comunidad?</h2>
-            <p class="texto">Descarga el archivo PDF para poder conocer todos los que le traremos a tu comunidad</p>
-        <form action="" class="gancho__form">
-            <input type="email" class="gancho__form-input" placeholder="Email para poder  descargar" required>
-            <button class="gancho__form-button">Descargar documento PDF</button>
-        </form>
-        </div> 
-        </div>
-        <div class="column column--50">
-            <video controls class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" id="fm-video">
-                <source src="video/principal.mp4" type="video/mp4">
-            </video>       
-        </div>
-         </div>
-     </div>
+        <nav class="menu">
+        <ul>
+            <li><a href="#conocenos" class="menu--link">Conocenos</a></li>
+            <li><a href="#propuestas" class="menu--link">Nuestra Labor</a></li>
+            <li><a href="#formulario" class="menu--link">Contactanos</a></li>
+        </ul>
+        </nav>
+    </div>
     </header>
 
     <main>
+
+        <section class="header">
         <div class="contenedor">
-        <div class="conocenos-column">
+            <h1 class="titulo"><b>JH</b>ony de Medellin</h1>
+            <p class="texto">Estoy visitando a todos los habitantes de Medellín, hablando con ellos, escuchando sus inquietudes, presentando a mi equipo, y también les comparto mis propuestas de campaña. 
+               <br>
+               Sígueme y acompáñame a los recorridos, #todosconjhony #JuntosAdelante o dime dónde quieres que te visite. <br> Sigueme en mis <em>redes sociales</em> para estar en contacto contigo.</p>
+           <div class="social">
+           <a href="https://m.facebook.com/JHonydemedellin2021/" class="social__link" target="_blank"><i class="fab fa-facebook"></i></a>
+           <a href="https://mobile.twitter.com/HonydeJ" class="social__link" target="_blank"><i class="fab fa-twitter-square"></i></a>
+           <a href="https://instagram.com/jhony_demedellin?utm_medium=copy_link" class="social__link" target="_blank"><i class="fab fa-instagram"></i></a>
+           </div>
+             <div class="container container--flex">
+            <div class="column column--50">
+            <div class="gancho">
+                <h2 class="sub-titulo">¿Deseas conocer las últimas propuestas para mejorar tu comunidad?</h2>
+                <p class="texto">Descarga el archivo PDF para poder conocer todos los que le traremos a tu comunidad</p>
+            <form action="" class="gancho__form">
+                <input type="email" class="gancho__form-input" placeholder="Email para poder  descargar" required>
+                <button class="gancho__form-button">Descargar documento PDF</button>
+            </form>
+            </div> 
+            </div>
+            <div class="column column--50">
+                <video controls class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" id="fm-video">
+                    <source src="video/principal.mp4" type="video/mp4">
+                </video>       
+            </div>
+             </div>
+         </div>
+        </section>
+        <div class="contenedor">
+        <div class="conocenos-column" id="conocenos">
             <h2 class="sub-titulo">Sub-titulo</h2>
             <div class="container container--flex">
                 <div class="column column--33">
@@ -122,7 +132,7 @@
         </div>
         </div>
 
-        <div class="conocenos-comentarios">
+        <div class="conocenos-comentarios" id="propuestas">
             <h2 class="sub-titulo">Lorem, ipsum dolor.</h2>
             <div class="container container--flex">
                 <div class="column column--50-25">
@@ -166,7 +176,7 @@
                      </div>
                      <div class="formulario--phone">
                         <i class="fas fa-phone"> 555-555-555</i> <br>
-                        <i class="fas fa-phone"> 777-777-777</i> <br>
+                        <i class="fab fa-whatsapp"> 777-777-777</i> <br>
                         <i class="fas fa-map-marked-alt"> Lorem ipsum dolor sit amet consectetur.</i> <br>
                         <i class="fas fa-envelope"> jhonydemedellin@gmail.com</i> <br>
                      </div>
