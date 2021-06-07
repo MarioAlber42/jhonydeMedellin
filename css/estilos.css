@@ -161,6 +161,11 @@ header .logo {
    margin: 1px 6px 6px 6px;
 }
 
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.925);
+}
+
 .header b {
     font-size: 2.7rem;
     letter-spacing: 5px;
@@ -381,6 +386,7 @@ header .logo {
 }
 
 .conocenos-column .mini-titulo {
+    padding: 3px;
     font-size: 1rem;
     color:rgba(255, 4, 4, 0.966);
 }
@@ -583,10 +589,10 @@ footer {
     color: #fff;
     text-align: center;
     margin-top: 15px;
-    padding: 5px;
 }
 
 footer .column--50 {
+    padding: 5px;
     margin-bottom: 10px;
 }
 
