@@ -50,8 +50,7 @@ img {
        flex-wrap: wrap;
        justify-content: space-between;
        align-items: center;
-       align-items: center;
-   }
+     }
                                
    .column {
        width: 100%;
@@ -467,6 +466,73 @@ header .logo {
    margin: auto;
 }
 
+/*------------------------galeria-------------------------------*/
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    padding: 3px;
+}
+
+.galeria--img {
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 8px 10px -4px rgba(185, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galeria--content {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.modal {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000000000;
+    display: none;
+}
+
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal__img {
+    margin: auto;
+    width: 70%;
+}
+
+.modal__boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(185, 21, 21, 0.8);
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 1000000000000000;
+}
+
+.modal--open {
+    display: block;
+}
+/*--------------------------formulario---------------------------*/
 .formulario {
   width: 100%;
   margin: auto;
@@ -640,6 +706,10 @@ footer .social--footer:hover {
 }
 
 @media screen and (min-width:480px) {
+
+.column--66 {
+    width: 49%;
+}
    
   .column--33 {
       width: 33%;
@@ -699,6 +769,10 @@ footer .social--footer:hover {
            width: 24.9%;
        }
 
+       .column--66 {
+        width: 33%;
+    }
+
        .header .column--50 {
            width: 49%;
        }
@@ -725,6 +799,10 @@ footer .social--footer:hover {
 }
 
    @media screen and (min-width:1024px) {
+
+    .column--66 {
+        width: 16%;
+    }
 
     .menu--nav {
         position: static;

@@ -21,6 +21,9 @@
     <meta name="copyright" content="Somisix Team">
     <title>Jhony de Medellin | Candidato</title>
     <link rel="icon" href="img/header.jpg">
+     <!-- Compiled and minified CSS -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+     <!-- Compiled and minified JavaScript -->
     <link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
     <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
@@ -33,6 +36,12 @@
 <body>
     <a href="https://api.whatsapp.com/send?phone=525548190322&text=Hola%20Jhony!." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i></a>
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <img src="" alt="" class="modal__img" id="modal__img">
+            </div>
+            <div class="modal__boton" id="modal__boton"><i class="fas fa-times-circle"></i></div>
+        </div>
     <header>
         <div class="contenedor">
             <div class="logo__section">
@@ -162,8 +171,56 @@
                 </div>
             </div>
         </div>
+
+        
+    <div class="galeria">
+        <h1 class="titulo">Galeria</h1>
+        <div class="container container--flex">
+                <div class="column column--50-25">
+                    <div class="galeria--content">
+                      <img src="img/Branding Fotos2-04.jpg" class="galeria--img" alt="">
+                    </div>
+                </div>
+                <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-01.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-02.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-03.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-05.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-06.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-07.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>
+               <div class="column column--50-25">
+                   <div class="galeria--content">
+                     <img src="img/Branding Fotos3-08.jpg" class="galeria--img" alt="">
+                   </div>
+               </div>   
+            </div>
+    </div>
+
+
     <div class="formulario" id="formulario">
-        <div class="contenedor">
             <h2 class="sub-titulo">Lorem, ipsum.</h2>
             <div class="container container--flex">
                 <div class="column column--50">
@@ -196,7 +253,6 @@
                     </form>
                 </div>
             </div>
-        </div>
     </div>
       </div>
     </main>
@@ -230,5 +286,8 @@
     </script>
     <script src="js/slider.js"></script>
     <script src="js/transicion.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
