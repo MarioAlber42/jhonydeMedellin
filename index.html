@@ -73,12 +73,25 @@
              <div class="container container--flex">
             <div class="column column--50">
             <div class="gancho">
-                <h2 class="sub-titulo">¿Deseas conocer las últimas propuestas para mejorar tu comunidad?</h2>
-                <p class="texto">Descarga el archivo PDF para poder conocer todos los que le traremos a tu comunidad</p>
-            <form action="" class="gancho__form">
-                <input type="email" class="gancho__form-input" placeholder="Email para poder  descargar" required>
-                <button class="gancho__form-button">Descargar documento PDF</button>
-            </form>
+                <h2 class="sub-titulo">¿Deseas que platiquemos de un modo cercano?</h2>
+                <p class="texto">Escribenos tus preocupaciones</p>
+          
+                <form action="enviar.php" class="formulario--form" method="POST">
+                    <label for="" class="formulario--form-label">Nombre: </label>
+                    <input type="text" class="formulario--form-input" name="nombre" placeholder="Nombre completo" required>
+                    <label for="" class="formulario--form-label">Correo electrónico: </label>
+                    <input type="email" class="formulario--form-input" name="email" placeholder="ejemplo@dominio.com" required>
+                    <label for="" class="formulario--form-label">Mensaje: </label>
+                    <textarea name="mensaje" id="" cols="30" rows="5" class="formulario--form-textarea" placeholder="Dejanos tus comentarios" required></textarea>
+                    <input type="submit" value="Enviar" class="formulario-form-button">
+                  </form>
+                
+
+
+
+
+
+
             </div> 
             </div>
             <div class="column column--50">
@@ -220,19 +233,19 @@
     </div>
 
 
-    <div class="formulario" id="formulario">
+    <div class="contacto" id="contacto">
             <h2 class="sub-titulo">Lorem, ipsum.</h2>
             <div class="container container--flex">
                 <div class="column column--50">
                    <h3 class="mini-titulo">Lorem, ipsum.</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quos explicabo maxime, ut deleniti perferendis expedita illum exercitationem,
                      et accusantium reiciendis molestias eveniet unde eos libero magnam facere voluptatem sed.</p>
-                     <div class="formulario--social">
-                        <a href="https://m.facebook.com/JHonydemedellin2021/" class="formulario--contacto" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://mobile.twitter.com/HonydeJ" class="formulario--contacto" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/jhony_demedellin?utm_medium=copy_link" class="formulario--contacto" target="_blank"><i class="fab fa-instagram"></i></a>
+                     <div class="contacto--social">
+                        <a href="https://m.facebook.com/JHonydemedellin2021/" class="contacto--social" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://mobile.twitter.com/HonydeJ" class="contacto--social" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/jhony_demedellin?utm_medium=copy_link" class="contacto--social" target="_blank"><i class="fab fa-instagram"></i></a>
                      </div>
-                     <div class="formulario--phone">
+                     <div class="contacto--phone">
                         <i class="fas fa-phone"> 555-555-555</i> <br>
                         <i class="fab fa-whatsapp"> 777-777-777</i> <br>
                         <i class="fas fa-map-marked-alt"> Lorem ipsum dolor sit amet consectetur.</i> <br>
@@ -240,17 +253,9 @@
                      </div>
                 </div>
                 <div class="column column--50">
-                    <form action="enviar.php" class="formulario--form" method="POST">
-                      <label for="" class="formulario--form-label">Nombre: </label>
-                      <input type="text" class="formulario--form-input" name="nombre" placeholder="Nombre completo" required>
-                      <label for="" class="formulario--form-label">Correo electrónico: </label>
-                      <input type="email" class="formulario--form-input" name="email" placeholder="ejemplo@dominio.com" required>
-                      <label for="" class="formulario--form-label">Número de teléfono: </label>
-                      <input type="text" class="formulario--form-input" name="telefono" placeholder="Número de celular o de casa" required>
-                      <label for="" class="formulario--form-label">Mensaje: </label>
-                      <textarea name="mensaje" id="" cols="30" rows="10" class="formulario--form-textarea" placeholder="Dejanos tus comentarios" required></textarea>
-                      <input type="submit" value="Enviar" class="formulario-form-button">
-                    </form>
+                    <div class="img--contacto">
+                    <img src="img/header.jpg" alt="">
+                </div>
                 </div>
             </div>
     </div>
@@ -291,3 +296,7 @@
 
 </body>
 </html>
+
+
+
+
