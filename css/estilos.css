@@ -574,7 +574,7 @@ header .logo {
     display: block;
 }
 
-/*--------------------------formulario---------------------------*/
+/*--------------------------contacto---------------------------*/
 .contacto {
   width: 100%;
   margin: auto;
@@ -583,7 +583,7 @@ header .logo {
 }
 
 .contacto .container--flex {
-    align-items: center;
+ align-self: center;
 }
 
 
@@ -616,7 +616,6 @@ header .logo {
 
 .contacto .column--50:nth-child(1) {
     border-bottom: 1px solid rgba(116, 108, 108, 0.966);
-    margin: auto;
     margin-bottom: 15px;
 }
 
@@ -627,6 +626,7 @@ header .logo {
 }
 
 .img--contacto:before {
+    border-radius: 50%;
     content: "";
     width: 100%;
     height: 100%;
@@ -641,6 +641,7 @@ header .logo {
     width: 100%;
     margin: auto;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 /*-------------------------------------estilos footer---------------------------------*/
